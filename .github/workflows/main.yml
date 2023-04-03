@@ -14,12 +14,12 @@ jobs:
       uses: thedoctor0/zip-release@main
       with:
         type: 'zip'
-        filename: '@(ModuleName).zip'
+        filename: 'disable-rotate-suggest.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig changelog.md update.json LICENSE setup.py README.md'
 
     - name: Upload Release
       uses: ncipollo/release-action@v1
       with:
-        artifacts: "@(ModuleName).zip"
+        artifacts: "disable-rotate-suggest.zip"
         token: ${{ secrets.GITHUB_TOKEN }}
         bodyFile: changelog.md

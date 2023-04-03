@@ -1,6 +1,6 @@
 {
-    "version": "@(ModuleVersion)",
-    "versionCode": @(ModuleVersionCode),
-    "zipUrl": "https://github.com/@(ModuleAuthorName)/@(ModuleName)/releases/latest/download/@(ModuleName).zip",
-    "changelog": "https://raw.githubusercontent.com/@(ModuleAuthorName)/@(ModuleName)/master/changelog.md"
+    "version": "1.0",
+    "versionCode": 10,
+    "zipUrl": "https://github.com/SAPTeamDEV/disable-rotate-suggest/releases/latest/download/disable-rotate-suggest.zip",
+    "changelog": "https://raw.githubusercontent.com/SAPTeamDEV/disable-rotate-suggest/master/changelog.md"
 }

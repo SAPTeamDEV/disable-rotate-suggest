@@ -1,7 +1,7 @@
-id=@(ModuleName)
-name=@(ModuleDisplayName)
-version=@(ModuleVersion)
-versionCode=@(ModuleVersionCode)
-author=@(ModuleAuthorName)
-description=@(ModuleDescription)
-updateJson=https://raw.githubusercontent.com/@(ModuleAuthorName)/@(ModuleName)/master/update.json
+id=disable-rotate-suggest
+name=Rotate suggest disabler
+version=1.0
+versionCode=10
+author=SAPTeam
+description=A Magisk module for disabling the Androif P+ rotate suggest feature
+updateJson=https://raw.githubusercontent.com/SAPTeamDEV/disable-rotate-suggest/master/update.json

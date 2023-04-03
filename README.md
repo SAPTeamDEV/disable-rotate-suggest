@@ -1,23 +1,24 @@
-# SAPTeam's Magisk module template
-This magis module template made the module creation way easier.
+# Disable Rotation Suggest
+Permanently Disable Rotate screen Suggestion in Android AOSP-Like roms
+works in LOS, Pixel Experience and other AOSP roms.
 
-## Features
-- Automates the build and releasing with Github actions.
-- Easily initiates the module properties with setup.py.
-- Has a biult in installer script, so you don't need to write a installer script.
+## How it Works?
+Android secure settings has a key called `show_rotation_suggestions` and it has True value by default
 
-## Getting started
-Working with this template is very easy. Most of actions is automated. with this instruction you can benefit all features of this module:
-- First you need to make a fork of this repository to your account.
-- Then clone your new repository to your computer.
-- in module files open `setup.py` with an text editor and replace the variables with your module props.
-- Run `setup.py` and after after finishing the first run, delete it.
-- Open `module.prop` and `update.json` to correct the github account and repo name if it was wrong.
-- Put your module files and update the changelog.
-- Create a tag and push it. when a new tag is pushed the action is triggered and new release zip is automatically created.
-You must check the Actions tab of your project for checking issues.
+You can turn this Feature off using this command:
+```
+settings put secure show_rotation_suggestions 0
+```
+But after each restart, this value RESETs to Default value. This module changes that setting to `0` after Boot Complete to keep this feature off.
 
-Note: for using magisk 14.0+ update api you need to update the version string in `update.json` in every releases.
+## Installation
+This module is compatible to Magisk v20.4+ and it have UpdateJson api for Updating within Magisk Manager.
+ 
+## Credits 
 
-## Credits
-This module forked from [MMT-Extended](https://github.com/Zackptg5/MMT-Extended) template.
+- [Magisk](https://github.com/topjohnwu/Magisk/): makes all these possible
+- [MMT-Extended](https://github.com/Zackptg5/MMT-Extended/): created base installer scripts
+
+## License
+
+This Project is licensed under the **GNU General Public License v2 (GPL-2)** (https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
