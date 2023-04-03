@@ -1,0 +1,7 @@
+id=@(ModuleName)
+name=@(ModuleDisplayName)
+version=@(ModuleVersion)
+versionCode=@(ModuleVersionCode)
+author=@(ModuleAuthorName)
+description=@(ModuleDescription)
+updateJson=https://raw.githubusercontent.com/@(ModuleAuthorName)/@(ModuleName)/master/update.json
