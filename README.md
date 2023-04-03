@@ -1,5 +1,5 @@
 # Disable Rotation Suggest
-Permanently Disable Rotate screen Suggestion in Android AOSP-Like roms
+Permanently disables the rotate screen suggestion feature in Android P+ AOSP-Like roms
 works in LOS, Pixel Experience and other AOSP roms.
 
 ## How it Works?
@@ -18,6 +18,8 @@ This module is compatible to Magisk v20.4+ and it have UpdateJson api for Updati
 
 - [Magisk](https://github.com/topjohnwu/Magisk/): makes all these possible
 - [MMT-Extended](https://github.com/Zackptg5/MMT-Extended/): created base installer scripts
+
+This module created with the [Magisk-Module-Template](https://github.com/SAPTeamDEV/Magisk-Module-Template) automation engine v1.3.
 
 ## License
 
